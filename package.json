@@ -31,7 +31,6 @@
     "gatsby-plugin-page-creator": "^4.15.1",
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
-    "gatsby-plugin-s3": "^0.3.8",
     "gatsby-plugin-sass": "^5.15.1",
     "gatsby-plugin-sharp": "^4.15.1",
     "gatsby-plugin-sitemap": "^5.18.0",

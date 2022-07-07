@@ -78,16 +78,6 @@ const config: GatsbyConfig = {
             __key: "assets/images"
         },
         {
-            resolve: `gatsby-plugin-s3`,
-            options: {
-                bucketName: "bidgemmer-website",
-                region: 'eu-west-1',
-                acl: 'aws-exec-read',
-                protocol: 'https',
-                hostname: 'www.bidgemmer.com',
-            },
-        },
-        {
             resolve: 'gatsby-plugin-zeit-now',
             options: {
               globalHeaders: {
