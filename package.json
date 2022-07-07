@@ -11,9 +11,8 @@
   "scripts": {
     "develop": "gatsby develop -p 8001",
     "start": "gatsby develop -p 8001",
-    "build": "gatsby build",
+    "build": "GATSBY_ACTIVE_ENV=production GATSBY_CONCURRENT_DOWNLOAD=10 gatsby build",
     "serve": "gatsby serve",
-    "deploy": "node -r dotenv/config ./node_modules/gatsby-plugin-s3 deploy",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
