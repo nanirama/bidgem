@@ -27,6 +27,20 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
 
     const pImage = siteMetadata.siteUrl+SiteLogo.publicURL
     console.log('pImage', pImage)
+    const schema = [
+        {
+           "@context": "http://schema.org",
+           "@type": "Organization",
+            url: siteMetadata.siteUrl,
+            "logo": pImage
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": siteMetadata.title,
+          "url": siteMetadata.siteUrl,    
+        }
+      ]
     return (
         <div>
             <Helmet
@@ -64,6 +78,8 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
                 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
                 <link rel="manifest" href="/images/site.webmanifest"/>
+                {schema && <script type="application/ld+json">{JSON.stringify(schema)}</script>}
+                
                 
             </Helmet>
         </div>
