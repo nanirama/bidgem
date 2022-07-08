@@ -1,6 +1,9 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
-import bgImage1 from '../../../assets/images/bidgemmer/bg-image-01.png';
+
+import { StaticImage } from "gatsby-plugin-image"
+
+//import bgImage1 from '../../../assets/images/bidgemmer/bg-image-01.png';
 
 const captchaSiteKey = "6LfvglEUAAAAAFwK20RNibeH-PetA1BFF_nD14rZ";
 
@@ -59,7 +62,8 @@ const DemoForm = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="analysis-img">
-                            <img loading="lazy" src={bgImage1} alt="analysis"/>
+                         <StaticImage src="../../../assets/images/bidgemmer/bg-image-01.png" width={546} height={533} alt="analysis" /> 
+                            {/* <img loading="lazy" src={bgImage1} alt="analysis"/> */}
                         </div>
                     </div>
 

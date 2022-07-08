@@ -1,6 +1,8 @@
 import {Link} from 'gatsby'
 import React, {useState} from 'react';
-import logo from "../../../assets/images/bidgemmer/logo.svg"
+//import logo from "../../../assets/images/bidgemmer/logo.svg"
+
+import { StaticImage } from "gatsby-plugin-image"
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = useState<boolean>(true);
@@ -33,7 +35,8 @@ const Navbar = () => {
                             onClick={() => setCollapsed(true)}
                             className="navbar-brand"
                         >
-                            <img src={logo} alt="logo" style={{width: 200}}/>
+                            <StaticImage src="../../../assets/images/bidgemmer/logo.svg" width={200} height={50} alt="Logo" />
+                            {/* <img src={logo} alt="logo" width={200} height={50} style={{width: 200}}/> */}
                         </Link>
 
                         <button onClick={toggleNavbar}

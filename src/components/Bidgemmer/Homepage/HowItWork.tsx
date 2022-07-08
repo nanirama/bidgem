@@ -1,8 +1,13 @@
 import React from 'react';
 // import OurMissionImg from "../../assets/images/our-mission/our-mission1.png";
-import OurMissionImg from "../../../assets/images/bidgemmer/finalmacbook.png";
+
+import { StaticImage } from "gatsby-plugin-image"
+
+//import OurMissionImg from "../../../assets/images/bidgemmer/finalmacbook.png";
+
 // import OurMissionShape1 from "../../../assets/images/our-mission/our-mission-shape1.png";
-import BGShape3 from "../../../assets/images/bidgemmer/bg-shape03.png";
+
+//import BGShape3 from "../../../assets/images/bidgemmer/bg-shape03.png";
 
 const HowItWork = () => {
     return (
@@ -41,9 +46,12 @@ const HowItWork = () => {
 
                     <div className="col-lg-6 col-md-12">
                         <div className="our-mission-image">
-                            <img loading="lazy" src={OurMissionImg} alt="image"/>
+                        <StaticImage src="../../../assets/images/bidgemmer/finalmacbook.png" width={650} height={370} alt="OurMissionImg" />
+                            {/* <img loading="lazy" src={OurMissionImg} alt="image"/> */}
                             <div className="shape">
-                                <img loading="lazy" src={BGShape3} alt="image"/>
+                            <StaticImage src="../../../assets/images/bidgemmer/bg-shape03.png" width={666} height={477} alt="BGShape3" />
+                            
+                                {/* <img loading="lazy" src={BGShape3} alt="image"/> */}
                             </div>
                         </div>
                     </div>

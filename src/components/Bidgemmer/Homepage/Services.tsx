@@ -1,7 +1,11 @@
 import React from 'react'
+
+import { StaticImage } from "gatsby-plugin-image"
+
+
 import BGShape3 from "../../../assets/images/bidgemmer/bg-shape03.png";
 // import aboutImg1 from '../../../assets/images/bidgemmer/undraw_pie_graph_re_fvol.svg'
-import aboutImg1 from '../../../assets/images/bidgemmer/image-circle.svg'
+//import aboutImg1 from '../../../assets/images/bidgemmer/image-circle.svg'
 
 const Services = () => {
     return (
@@ -42,9 +46,11 @@ const Services = () => {
 
                     <div className="overview-image d-none d-lg-block">
                         <div className="our-mission-image">
-                            <img loading="lazy" src={aboutImg1} alt="about"/>
+                        <StaticImage src="../../../assets/images/bidgemmer/image-circle.svg" width={543} height={437} alt="BGShape3" />
+                            {/* <img loading="lazy" src={aboutImg1} alt="about"/> */}
                             <div className="shape">
-                                <img loading="lazy" src={BGShape3} alt="image"/>
+                            <StaticImage src="../../../assets/images/bidgemmer/bg-shape03.png" width={558} height={400} alt="BGShape3" />
+                                {/* <img loading="lazy" src={BGShape3} alt="image"/> */}
                             </div>
                         </div>
                     </div>
