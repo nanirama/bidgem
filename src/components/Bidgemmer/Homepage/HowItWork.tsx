@@ -41,9 +41,9 @@ const HowItWork = () => {
 
                     <div className="col-lg-6 col-md-12">
                         <div className="our-mission-image">
-                            <img loading="lazy" src={OurMissionImg} alt="image"/>
+                            <img loading="lazy" src={OurMissionImg} alt="image" width={717} height={378}/>
                             <div className="shape">
-                                <img loading="lazy" src={BGShape3} alt="image"/>
+                                <img loading="lazy" src={BGShape3} alt="image" />
                             </div>
                         </div>
                     </div>

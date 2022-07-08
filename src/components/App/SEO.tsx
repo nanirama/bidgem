@@ -17,7 +17,7 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
         <div>
             <Helmet
                 htmlAttributes={{
-                    lang: 'en-us',
+                    lang: 'en_US',
                 }}
                 title={defaultTitle}
                 titleTemplate={defaultTitle}
