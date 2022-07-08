@@ -150,7 +150,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-map">
-                <img loading="lazy" src={footerMap} alt="world_map"/>
+                <img loading="lazy" src={footerMap} alt="world_map" width={700} height={512}/>
             </div>
         </footer>
     );
