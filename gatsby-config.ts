@@ -53,11 +53,16 @@ const config: GatsbyConfig = {
             }
         },
         {
-            resolve: "gatsby-plugin-sharp",
-            options: {
-                path: `${__dirname}/src/assets/images/`,
-                icon: `${__dirname}/src/images/favicon-32x32.png`
+          resolve: `gatsby-plugin-sharp`,
+          options: {
+            defaults: {
+              formats: [`auto`, `webp`],
+              placeholder: `blurred`,
+              quality: 100,
+              backgroundColor: `transparent`,
+              webpOptions: {quality: 100}
             }
+          }
         },
         "gatsby-transformer-sharp",
         "gatsby-plugin-sass",
