@@ -1,9 +1,6 @@
 import React, {FC} from 'react'
 import {BlogPostDetails} from "./BlogGrid";
 
-import { StaticImage } from "gatsby-plugin-image"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
 interface BlogDetailsContentProps {
     post: BlogPostDetails
 }
@@ -17,11 +14,7 @@ const BlogDetailsContent: FC<BlogDetailsContentProps> = ({post}) => {
                     <div className="col-lg-8 col-12">
                         <div className="blog-details-desc">
                             <div className="article-image">
-                          
-                            {/* <GatsbyImage image={post.image} alt={post.title} /> */}
                                 <img loading="lazy" src={post.image} alt={post.title}/>
-                                {/* <StaticImage src="../../../assets/images/bidgemmer/logo.svg" width={200} height={50} alt="Logo" /> */}
-                                {/* <StaticImage src="{post.image}" alt={post.title} width={200} height={50} /> */}
                             </div>
 
                             <div className="article-content">

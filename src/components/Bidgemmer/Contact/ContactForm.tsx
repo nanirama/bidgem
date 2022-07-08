@@ -1,10 +1,7 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
-
-import { StaticImage } from "gatsby-plugin-image"
-
-//import BGShape3 from "../../../assets/images/bidgemmer/bg-shape03.png";
-//import contact from "../../../assets/images/bidgemmer/contact_us.svg";
+import BGShape3 from "../../../assets/images/bidgemmer/bg-shape03.png";
+import contact from "../../../assets/images/bidgemmer/contact_us.svg";
 
 const captchaSiteKey = "6LfvglEUAAAAAFwK20RNibeH-PetA1BFF_nD14rZ";
 
@@ -139,12 +136,9 @@ const ContactForm = () => {
 
                     <div className="col-lg-6">
                         <div className="contact-image d-none d-md-block">
-                        <StaticImage src="../../../assets/images/bidgemmer/contact_us.svg" width={546} height={274} alt="contact" />
-                            {/* <img loading="lazy" src={contact} alt="contact"/> */}
+                            <img loading="lazy" src={contact} alt="contact"/>
                             <div className="shape">
-                            <StaticImage src="../../../assets/images/bidgemmer/bg-shape03.png" width={561} height={402} alt="image" />
-                            
-                                {/* <img loading="lazy" src={BGShape3} alt="image"/> */}
+                                <img loading="lazy" src={BGShape3} alt="image"/>
                             </div>
                         </div>
                     </div>

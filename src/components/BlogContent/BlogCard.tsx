@@ -1,7 +1,6 @@
 import {Link} from 'gatsby'
 import React, {FC} from 'react'
 
-
 interface BlogGridProps {
     to: string
     image?: string
@@ -18,7 +17,6 @@ const BlogGrid: FC<BlogGridProps> = ({to, image, authorImage, backgroundColor, t
             {image &&
             <div className="post-image">
                 <img loading="lazy" src={image} alt={title}/>
-               
             </div>
             }
 

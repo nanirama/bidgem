@@ -1,12 +1,9 @@
 import {Link} from 'gatsby'
 import React, {useCallback} from 'react'
-
-import { StaticImage } from "gatsby-plugin-image"
-
-//import gem1 from "../../../assets/images/bidgemmer/gems/gems-02.svg";
-//import logo from "../../../assets/images/bidgemmer/logo.svg"
+import gem1 from "../../../assets/images/bidgemmer/gems/gems-02.svg";
+import logo from "../../../assets/images/bidgemmer/logo.svg"
 // import footerMap from "../../../assets/images/footer-map.png"
-//import footerMap from "../../../assets/images/bidgemmer/world-map.svg"
+import footerMap from "../../../assets/images/bidgemmer/world-map.svg"
 import useSiteMetadata from "../../useSiteMetadata";
 
 const Footer = () => {
@@ -25,21 +22,16 @@ const Footer = () => {
     return (
         <footer className="footer-area bg-color">
             <div className='footer-img-container d-none d-xl-block'>
-                {/* <img src={gem1} loading='lazy' alt='image of a gem'
+                <img src={gem1} loading='lazy' alt='image of a gem'
                      className='position-relative img-gems d-none d-xl-block'
-                     style={{right: 'calc(-100vw + 150px + 3rem)', top: '-6rem', width: 150, height: 'auto'}}/> */}
-
-                     <StaticImage src="../../../assets/images/bidgemmer/gems/gems-02.svg" loading='lazy' alt='image of a gem'
-                     className='position-relative img-gems d-none d-xl-block'
-                     style={{right: 'calc(-100vw + 150px + 3rem)', top: '-6rem', width: 150, height: '178'}}  />
+                     style={{right: 'calc(-100vw + 150px + 3rem)', top: '-6rem', width: 150, height: 'auto'}}/>
             </div>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-4 col-12">
                         <div className="single-footer-widget">
                             <a href="/" className="logo">
-                            <StaticImage src="../../../assets/images/bidgemmer/logo.svg" width={200} height={50} alt="Logo" />
-                                {/* <img src={logo} style={{width: 200}} alt={siteMetadata.name}/> */}
+                                <img src={logo} style={{width: 200}} alt={siteMetadata.name}/>
                             </a>
                             <p>Ultimate Auction Platform</p>
                             <p>
@@ -158,8 +150,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-map">
-            <StaticImage src="../../../assets/images/bidgemmer/world-map.svg" width={700} height={520} alt="world_map" />
-                {/* <img loading="lazy" src={footerMap} alt="world_map"/> */}
+                <img loading="lazy" src={footerMap} alt="world_map"/>
             </div>
         </footer>
     );
