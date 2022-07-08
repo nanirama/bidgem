@@ -130,6 +130,12 @@ const config: GatsbyConfig = {
               stripQueryString: true,
             },
           },
+          {
+            resolve: 'gatsby-plugin-preconnect',
+            options: {
+              domains: ['https://www.facebook.com','https://twitter.com','https://www.instagram.com','https://www.linkedin.com','https://bidgemmer.freshdesk.com'],
+            },
+          },
         // "gatsby-plugin-webpack-bundle-analyser-v2",
         // {
         //     resolve: 'gatsby-plugin-page-creator',
