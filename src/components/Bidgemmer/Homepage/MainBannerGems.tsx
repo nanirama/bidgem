@@ -32,7 +32,7 @@ const MainBannerGems = () => {
     return (
         <div className='img-gems-container'>
             <ReactWOW delay='.2s' animation='fadeIn'>
-                <img src={gem3} loading='lazy' alt='image of a gem'
+                <img src={gem3} alt='image of a gem'
                      className='img-gems d-none d-xl-block ml-0 ml-md-2 ml-xl-5 mt-0 mt-md-2'
                      style={{
                          left: '10rem',
@@ -42,14 +42,14 @@ const MainBannerGems = () => {
                      }}/>
             </ReactWOW>
             <ReactWOW delay='.25s' animation='fadeIn'>
-                <img src={gem1} loading='lazy' alt='image of a gem'
+                <img src={gem1} alt='image of a gem'
                      className='img-gems gem1 mr-0 mr-md-2 mr-xl-5 mt-4 mt-md-2'
                      style={{
                          transform: `translate(${transformState[1].x}px,${transformState[1].y}px)`
                      }}/>
             </ReactWOW>
             <ReactWOW delay='.3s' animation='fadeIn'>
-                <img src={gem4} loading='lazy' alt='image of a gem'
+                <img src={gem4} alt='image of a gem'
                      className='img-gems d-none d-xl-block ml-0 ml-md-2 ml-xl-5 mt-0 mt-md-2'
                      style={{
                          right: '25%',
@@ -59,7 +59,7 @@ const MainBannerGems = () => {
                      }}/>
             </ReactWOW>
             <ReactWOW delay='.25s' animation='fadeIn'>
-                <img src={gem2} loading='lazy' alt='image of a gem'
+                <img src={gem2} alt='image of a gem'
                      className='img-gems d-none d-xl-block mr-0 mr-md-2 mr-xl-5 mt-4 mt-md-2'
                      style={{
                          left: '20rem',
@@ -69,7 +69,7 @@ const MainBannerGems = () => {
                      }}/>
             </ReactWOW>
             <ReactWOW delay='.35s' animation='fadeIn'>
-                <img src={gem4} loading='lazy' alt='image of a gem'
+                <img src={gem4} alt='image of a gem'
                      className='img-gems d-none d-xl-block ml-0 ml-md-2 ml-xl-5 mt-0 mt-md-2'
                      style={{
                          left: '26rem',
