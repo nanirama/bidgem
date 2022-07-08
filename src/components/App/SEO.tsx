@@ -25,8 +25,8 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
     const defaultTitle = `${siteMetadata.name} - ${title || siteMetadata.title}`;
     const canonicalUrl = cpath ? siteMetadata.siteUrl+cpath : siteMetadata.siteUrl
 
-    const pImage = SiteLogo
-    //console.log('curl', canonicalUrl)
+    const pImage = siteMetadata.siteUrl+SiteLogo.publicURL
+    console.log('pImage', pImage)
     return (
         <div>
             <Helmet
