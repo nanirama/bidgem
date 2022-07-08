@@ -50,7 +50,7 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
 
 
                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:creator" content={site.siteMetadata?.author || ``} />
+                <meta name="twitter:creator" content={siteMetadata?.author || ``} />
                 <meta name="twitter:description" content={description || siteMetadata.description} />
                 <meta name="twitter:url" content={canonicalUrl} />
                 <meta name="twitter:image" content={pImage} />
