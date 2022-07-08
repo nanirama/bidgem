@@ -1,6 +1,8 @@
 import React, {FC} from 'react'
+import { useStaticQuery, graphql } from "gatsby"
 import {Helmet} from "react-helmet"
 import useSiteMetadata from "../useSiteMetadata";
+
 
 export interface SEOProps {
     title?: string
