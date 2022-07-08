@@ -6,7 +6,7 @@ const config: GatsbyConfig = {
         name: `BidGemmer LTD`,
         title: `The Best Auction Technology for the Diamond Industry`,
         description: `BidGemmer is a leading provider of auction software for diamond companies to easily administer diamond auctions without need of technical expertise`,
-        siteUrl: `https://www.bidgemmer.com`
+        siteUrl: `https://timely-cobbler-695512.netlify.app`
     },
     // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
     // If you use VSCode you can also use the GraphQL plugin
@@ -30,8 +30,8 @@ const config: GatsbyConfig = {
           {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
-              host: 'https://www.bidgemmer.com/',
-              sitemap: 'https://www.bidgemmer.com/sitemap/sitemap-0.xml',
+              host: 'https://timely-cobbler-695512.netlify.app',
+              sitemap: 'https://timely-cobbler-695512.netlify.app/sitemap/sitemap-0.xml',
               env: {
                 development: {
                   policy: [{ userAgent: '*', disallow: ['/'] }]
@@ -78,6 +78,16 @@ const config: GatsbyConfig = {
             __key: "assets/images"
         },
         {
+            resolve: `gatsby-plugin-s3`,
+            options: {
+                bucketName: "bidgemmer-website",
+                region: 'eu-west-1',
+                acl: 'aws-exec-read',
+                protocol: 'https',
+                hostname: 'www.bidgemmer.com',
+            },
+        },
+        {
             resolve: 'gatsby-plugin-zeit-now',
             options: {
               globalHeaders: {
@@ -107,7 +117,14 @@ const config: GatsbyConfig = {
                 "img-src": "'self' data: www.google-analytics.com"
               }
             }
-          }
+          },
+          {
+            resolve: `gatsby-plugin-canonical-urls`,
+            options: {
+              siteUrl: `https://timely-cobbler-695512.netlify.app`,
+              stripQueryString: true,
+            },
+          },
         // "gatsby-plugin-webpack-bundle-analyser-v2",
         // {
         //     resolve: 'gatsby-plugin-page-creator',

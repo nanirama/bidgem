@@ -127,7 +127,7 @@ const Footer = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-6">
                             <p>
-                                Copyright @{currentYear} <strong>{siteMetadata.name}</strong> All rights reserved
+                                Copyright @{currentYear} <strong>{siteMetadata.name}</strong>. All rights reserved.
                             </p>
                         </div>
 

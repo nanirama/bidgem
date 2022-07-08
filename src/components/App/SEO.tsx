@@ -12,12 +12,18 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
     const siteMetadata = useSiteMetadata();
     const defaultTitle = `${siteMetadata.name} - ${title || siteMetadata.title}`;
     const canonicalUrl = cpath ? siteMetadata.siteUrl+cpath : siteMetadata.siteUrl
-    console.log('curl', canonicalUrl)
+    //console.log('curl', canonicalUrl)
     return (
         <div>
-            <Helmet>
-                <html lang="en" />
+            <Helmet
+                htmlAttributes={{
+                    lang: 'en-us',
+                }}
+                title={defaultTitle}
+                titleTemplate={defaultTitle}
+                >
                 <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
                 <title>{defaultTitle}</title>
                 <meta name="description" content={description || siteMetadata.description}/>
                 <meta name="og:title" property="og:title" content={defaultTitle}/>
@@ -33,8 +39,7 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
                 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"/>
                 <link rel="manifest" href="/images/site.webmanifest"/>
-                <link rel="canonical" href={canonicalUrl} />
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+                
             </Helmet>
         </div>
     )
