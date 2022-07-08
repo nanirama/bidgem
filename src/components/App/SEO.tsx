@@ -23,7 +23,6 @@ const SEO: FC<SEOProps> = ({title, description, cpath}) => {
                 titleTemplate={defaultTitle}
                 >
                 <meta charSet="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
                 <title>{defaultTitle}</title>
                 <meta name="description" content={description || siteMetadata.description}/>
                 <meta name="og:title" property="og:title" content={defaultTitle}/>
